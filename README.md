@@ -1,24 +1,33 @@
 # Codex Cloud Development Workspace
 
-This repository is a language-agnostic starting point for development with OpenAI Codex Cloud.
+A minimal, language-agnostic repository for developing projects with OpenAI Codex Cloud.
 
-## Current status
+## Project status
 
-- No application language, framework, or runtime has been selected.
-- No third-party dependencies or test commands are configured.
-- No API keys or passwords are stored in the repository.
+- No programming language, framework, runtime or dependencies have been selected.
+- There is no application to run and no automated test suite yet.
+- No project secrets are stored in this repository.
+
+## Repository files
+
+- `README.md`: project overview and development workflow
+- `AGENTS.md`: instructions for Codex and coding agents
 
 ## Development workflow
 
-1. Define the project requirements and select a language only when needed.
-2. Work on a feature branch, not directly on `main`.
-3. Install only dependencies required by the task; document their purpose and versions.
-4. Add run and test commands once executable code exists.
-5. Run relevant tests and explain any missing tests or failures.
-6. Open a pull request and review changes before merging.
+1. Define the requirements before choosing a language or framework.
+2. Create a separate branch for each change; avoid committing directly to `main`.
+3. Install only required dependencies and document why they are necessary.
+4. Add documented setup, run, and test commands after selecting a runtime.
+5. Run relevant checks; report missing tests and failures accurately.
+6. Open a pull request to review changes before merging.
 
-## Codex Cloud
+## Codex Cloud configuration
 
-Start with default settings and no custom setup script. Add a setup script, secrets, and scoped network access only when a real project requires them. Store credentials in secret management, never source files.
+Use the default cloud environment initially, without a custom setup script. Configure a runtime, dependency installation, and required network domains only when the project needs them. Add sensitive values using environment secrets rather than tracked files.
 
-See [AGENTS.md](AGENTS.md) for Codex working rules (to be added on the setup branch).
+## Validation
+
+At this stage, verify that `README.md` and `AGENTS.md` exist, and review their contents. No executable tests are available until application code is added.
+
+See `AGENTS.md` for further rules.
